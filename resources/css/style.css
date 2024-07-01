@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #83AD28;
+}
+
+html{
+  /* Define a cor da fonte */
+  color: #555;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+/*Header */
+header{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: aquamarine;
+  align-items: center;
+
+
+}
+
+.logo{
+  height:100px;
+}
+
+
+ul{
+  display: flex;
+  gap: 20px;
+  
+}
+li{
+  list-style: none;
+  align-self: center;
+  margin-right: 100px;
+  
+  color:black ;
+}
+
+
+li a{
+ text-decoration: none;
+}
+
+/*Section Cursos*/
+
+
+.cursos h2{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.container{
+  display: flex;
+}
+
+.carousel {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.carousel-inner {
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: space-around; /* Isso espaçará os itens de forma uniforme */
+  align-items: center; /* Isso centralizará verticalmente os itens */
+}
+.c-card {
+  border-radius: 5px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  height: 400px;
+  background-color: rgb(175, 103, 8);
+  margin-top: 20px;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+}
+.carousel-inner{
+  display: flex;
+}
+
+.secao-professores{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.c-container{
+  display: flex;
+  gap: 20px;
+}
+/*Seção Professores*/
+.c2-card {
+  border-radius: 2px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  height: 300px;
+  background-color: rgb(175, 103, 8);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.professores{
+  height: 150px;
+  
+}
+
+fieldset{
+  background-color: gray
+}
+
