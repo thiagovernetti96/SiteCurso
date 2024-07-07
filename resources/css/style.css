@@ -19,11 +19,9 @@ html{
 /*Header */
 header{
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  background-color: aquamarine;
+  justify-content: space-around; 
   align-items: center;
-
+  flex-wrap: wrap;
 
 }
 
@@ -34,6 +32,7 @@ header{
 
 ul{
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   
 }
@@ -100,16 +99,6 @@ li a{
   display: flex;
 }
 
-.secao-professores{
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.c-container{
-  display: flex;
-  gap: 20px;
-}
 /*Seção Professores*/
 .c2-card {
   border-radius: 2px;
@@ -199,4 +188,31 @@ footer{
 .swiper{
   display: flex;
   margin-left: 30px;
+}
+
+@media only screen and (min-width:390px) and  (max-width: 768px) {
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+
+  ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+  }
+
+  .professores{
+    height: 100px;
+    width: 100px;
+  }
+
+  .sede{
+    width: 350px;
+  }
+
+  
 }
