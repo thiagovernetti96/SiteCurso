@@ -137,6 +137,11 @@ li a{
   height: 150px;
 }
 
+.sede{
+  
+  width: 400px;
+}
+
 /*Seção Formulário*/
 
 form{
@@ -210,9 +215,7 @@ footer{
     width: 100px;
   }
 
-  .sede{
-    width: 350px;
-  }
+
 
   
 }
