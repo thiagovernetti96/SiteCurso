@@ -89,6 +89,7 @@ li a{
   height: 400px;
   background-color: rgb(175, 103, 8);
   margin-top: 20px;
+  margin-left: 300px;
 }
 
 .carousel-item {
@@ -115,7 +116,7 @@ li a{
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
   width: 30%;
   height: 300px;
-  background-color: rgb(175, 103, 8);
+  background-color: rgba(245, 243, 241, 0.486);
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -123,10 +124,79 @@ li a{
 }
 .professores{
   height: 150px;
+  border-radius: 50%;
+  width: 130px;
   
 }
 
-fieldset{
-  background-color: gray
+/*Seção Depoimentos*/
+.d2-card{
+  border-radius:3px;
+  height: 400px;
+  width: 450px;
+  background-color: rgba(245, 243, 241, 0.486);
 }
 
+.foto-aluno{
+  height: 80px;
+  border-radius: 50%;
+  width: 50px;
+  
+}
+/*Seção Trabalhe conosco*/
+.certificado{
+  height: 150px;
+}
+
+/*Seção Formulário*/
+
+form{
+  background-color: gray;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 45%; 
+}
+
+.submit-group{
+  display: flex;
+  flex-direction: column;
+  margin-left: 450px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 25%; 
+}
+label {
+  margin-bottom: 5px;
+}
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  
+}
+
+.Trabalhe-Conosco{
+  width:100%;
+}
+
+footer{
+  width: 100%;
+}
+
+.swiper{
+  display: flex;
+  margin-left: 30px;
+}

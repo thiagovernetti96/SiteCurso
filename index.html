@@ -9,9 +9,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
-<body class="bg-success">
-  <header >
+<body class="bg-dark-subtle">
+  <header>
     <img class="logo" src="./resources/img/logo escola.jpg" alt=""> 
     <nav>      
       <ul>
@@ -27,51 +31,53 @@
     <div class="h2 cursos">
       <h2>Cursos</h2>
     </div>
-    <!--<div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="c-card">
-            <h2>gana</h2>
+    <!--<div class="swiper">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              Slide 1
+              <div class="c-card">
+                  <h2>Gana</h2>
+              </div>
+              <div class="c-card">
+                  <h2>Togo</h2>
+              </div>
+              <div class="c-card">
+                  <h2>República Dominicana</h2>
+              </div>
           </div>
-          <div class="c-card">
-            <h2>togo</h2>
+          <div class="swiper-slide">
+              Slide 2
+              <div class="c-card">
+                  <h2>Brasil</h2>
+              </div>
+              <div class="c-card">
+                  <h2>Argentina</h2>
+              </div>
+              <div class="c-card">
+                  <h2>Uruguai</h2>
+              </div>
           </div>
-          <div class="c-card">
-            <h2>republica dominicana</h2>
+          <div class="swiper-slide">
+              Slide 3
+              <div class="c-card">
+                  <h2>Colômbia</h2>
+              </div>
+              <div class="c-card">
+                  <h2>Chile</h2>
+              </div>
+              <div class="c-card">
+                  <h2>Austrália</h2>
+              </div>
           </div>
-        </div>
-        <div class="carousel-item  ">
-          <div class="c-card">
-            <h2>brasil</h2>
-          </div>
-          <div class="c-card">
-            <h2>argentina</h2>
-          </div>
-          <div class="c-card">
-            <h2>uruguai</h2>
-          </div>
-        </div>
-        <div class="carousel-item ">
-          <div class="c-card">
-            <h2>colombia</h2>
-          </div>
-          <div class="c-card">
-            <h2>Chile</h2>
-          </div>
-          <div class="c-card">
-            <h2>australia</h2>
-          </div>
-        </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" ></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>-->
+      < Botões de navegação -->
+      <!--<div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      < Paginação -->
+      <!--<div class="swiper-pagination"></div>
+      < Barra de rolagem -->
+      <!--<div class="swiper-scrollbar"></div>-->
+  </div>
   </section>
   <section>
     <div class="secao-professores">
@@ -79,13 +85,14 @@
     </div>
     <div class="c-container">
       <div class="c2-card">
-        <div class="d-flex justify-content-center">
-          <p>Paulo Antunes</p>
+        <div class="d-flex ">
+          <img class="professores " src="resources/img/elon musk.jpeg" alt="">
+          <p class="mt-5 ms-3">Paulo Antunes</p>
           
         </div>
         
         
-        <img class="professores" src="resources/img/elon musk.jpeg" alt="">
+        
         <div class="d-flex justify-content-center">
           <p>Programação Web</p>
           
@@ -97,11 +104,12 @@
         </div>
       </div>
       <div class="c2-card">
-        <div class="d-flex justify-content-center" >
-          <p>Carla Souza</p>
+        <div class="d-flex " >         
+          <img class="professores" src="resources/img/carla souza.jpg" alt="">
+          <p class="mt-5 ms-3">Carla Souza</p>
         </div>
         
-        <img class="professores" src="resources/img/carla souza.jpg" alt="">
+       
         <div class="d-flex justify-content-center mt-1" >
           <p>Banco de Dados</p>
         </div>
@@ -112,11 +120,13 @@
         </div>
       </div>
       <div class="c2-card">
-        <div class="d-flex justify-content-center" >
-          <p>Paulo Antunes</p>
+        <div class="d-flex " >
+          <img class="professores" src="resources/img/Cláudio Cruz.jpg" alt="">
+          <p class="mt-5 ms-3">Paulo Antunes</p>
+          
         </div>
       
-        <img class="professores" src="resources/img/Cláudio Cruz.jpg" alt="">
+       
         <div class="d-flex justify-content-center mt-1" >
           <p>Álgebra Linear</p>
         </div>
@@ -129,15 +139,16 @@
         
       </div>
     </div>
-    <div class="container">
+    <div class="c-container">
       <div class="c2-card">
-        <div class="d-flex justify-content-center">
-          <p>Marcos Santos</p>
+        <div class="d-flex ">
+          <img class="professores" src="resources/img/mark-zuckerberg.png" alt="">
+          <p class="mt-5 ms-3">Marcos Santos</p>
           
         </div>
         
         
-        <img class="professores" src="resources/img/mark-zuckerberg.png" alt="">
+        
         <div class="d-flex justify-content-center">
           <p>Algoritmos</p>
           
@@ -149,11 +160,13 @@
         </div>
       </div>
       <div class="c2-card">
-        <div class="d-flex justify-content-center" >
-          <p>Sérgio Canto</p>
+        <div class="d-flex " >
+          <img class="professores" src="resources/img/professor rico.jpg" alt="">
+          <p class="mt-5 ms-3">Sérgio Canto</p>
+          
         </div>
         
-        <img class="professores" src="resources/img/professor rico.jpg" alt="">
+        
         <div class="d-flex justify-content-center mt-1" >
           <p>Javascript e React</p>
         </div>
@@ -164,11 +177,12 @@
         </div>
       </div>
       <div class="c2-card">
-        <div class="d-flex justify-content-center" >
-          <p>Paulo Antunes</p>
+        <div class="d-flex " >
+          <img class="professores" src="resources/img/tudo-sobre-a-carreira-de-professor_g.webp" alt=>
+          <p class="mt-5 ms-4">Paula Neri</p>
         </div>
       
-        <img class="professores" src="resources/img/papel-do-professor-no-ensino-hibrido-min.png" alt="">
+       
         <div class="d-flex justify-content-center mt-1" >
           <p>Apis e Microserviços</p>
         </div>
@@ -180,26 +194,124 @@
       </div>
     </div>
   </section>
-   <section>
-      <div class="d-flex mt-3 justify-content-center">
-        <h2>Depoimentos</h2>
+  <section>
+    <div class="d-flex mt-3 justify-content-center">
+      <h2>Depoimentos</h2>
+    </div>
+    <div class=" d-flex mt-2 justify-content-around">
+      <div class="d2-card ">
+        <div class="d-flex ms-2">
+          <img src="resources/img/2.png" class="foto-aluno" alt="Aluna Isabela Cruz">
+          <div class="d-flex flex-column"><p class="mt-2 ms-2">Isabela Cruz</p>
+            <p > Banco do Brasil(Técnico)</p>
+          </div>
+          
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <p>Foram 3 meses até a prova<br> e eu não sabia nada.Era meu primeiro concurso. Quando me inscrevi pro concurso
+          pensei que seria bom pra começar, então me inscrevi no cursae para ter um melhor aproveitamento, não esperava que o cursae fosse me aprovar no primeiro concurso da minha vida,essa plataforma é incrível.</p>
+        </div>
+        
       </div>
-      <div class=" d-flex mt-2 justify-content-around">
-        <img src="resources/img/depoimento2.png" alt="">      
-        <img src="resources/img/Opera Instantâneo_2024-06-30_111350_www.estrategiaconcursos.com.br.png" alt="">
-        <img src="resources/img/depoimento3.png" alt="">  
+      <div class="d2-card ">
+        <div class="d-flex ms-2">
+          <img src="resources/img/Foto de perfil para facebook simples elegante degradê azul preto e branco.png" class="foto-aluno" alt="Aluno Wesley Britto">
+          <div class="d-flex flex-column"><p class="mt-2 ms-2">Wesley Britto </p>
+            <p> TRE-PB(Técnico)</p>
+          </div>
+          
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <p>Assisti a algumas vídeoaulas de outros cursos e do Cursae. Gosto bastante de estudar por Pdfs e por isso o curso do Cursae foi 
+            foi fundamental para minha aprovação,pois usei o material específico do concurso de "cabo a rabo". O material 
+            é muito organizado e didático e os professores sensacionais.
+          </p>
+        </div>
+        
       </div>
-      <div class=" d-flex justify-content-around mt-5">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/YVsLM57P2BM?si=gLPqFBk7yL6c-n9u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/n5ai6bdFE5E?si=jzSVVNVhEqkUjJC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="d2-card ">
+        <div class="d-flex ms-2">
+          <img src="resources/img/Foto de perfil para Instagram profissional simples em azul e amarelo.png" class="foto-aluno" alt="Aluna Bruna Nogueira">
+          <div class="d-flex flex-column"><p class="mt-2 ms-2">Bruna Nogueira</p>
+            <p>Ministério Público(Técnólogo)</p>
+          </div>
+          
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <p>Por Meio de um amigo, o qual mencionou ter gostado muito do material do Cursae, e então fui pesquisar. 
+            Depois de um tempo estudando sem material de curso direcionado para o concurso, resolvi investir e 
+            não pensei em outro curso que não fosse o cursae
+          </p>
+        </div>
+        
       </div>
+    </div>
+    <div class=" d-flex justify-content-around mt-5">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YVsLM57P2BM?si=gLPqFBk7yL6c-n9u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/n5ai6bdFE5E?si=jzSVVNVhEqkUjJC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+  <section class="bg-light">
+    <div class=" mt-3 d-flex justify-content-center">
+      <h2> Trabalhe Conosco</h2>
+    </div>
+    <img class="Trabalhe-Conosco" src="resources/img/senac trabalhe conosco.png" alt="">
 
-   </section>
+    <div class=" mt-2 d-flex">
+      <img class="sede" src="resources/img/sede-propria-landix-blog.webp" alt="Sede da empresa">
+      <p class=" ms-3 align-self-center"> Nós da Cursae somos a maior empresa de cursos para ti da américa latina,presente em mais de 10 países,
+       e temos as melhores vagas
+        com as melhores remunerações do mercado, 
+        além de certificado<br> de great place to work
+      que garante que seu <br>respeito na empresa está garantido e seu esforço será recompensado.  </p>
+    </div>
+
+    <div class="d-flex justify-content-around">
+      <img class="certificado" src="vendors/css/img/GPTW_2022.webp" alt="">
+      <img  class="certificado" src="vendors/css/img/best places glassdoor.png" alt="">
+      <img class="certificado" src="vendors/css/img/top of mind.png" alt="">
+    </div>
+  </section>
+  <footer class=" bg-primary  ">
+    <div class="d-flex  justify-content-around">
+      <img class="logo" src="resources/img/logo escola.jpg" alt="">
+      <p>Faça um dos cursos do Cursae e fique pronto <br> para o mundo do desenvolvimento Web.</p>
+      <p>Contatos: <br>
+      Telefone: 5199098867
+      <br>Email: Cursae@mail.com</p>
+    </div>
+    <div class="d-flex justify-content-center">
+      <a ><ion-icon class="ms-1" name="logo-facebook"></ion-icon></a>
+      <a ><ion-icon class="ms-1" name="logo-instagram"></ion-icon></a>
+    </div>
+
+  </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
- 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      
+      direction: 'vertical',
+      loop: true,
+        
+      pagination: {
+        el: '.swiper-pagination',
+      },
+        
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
 </body>
 
 </html>
