@@ -215,7 +215,13 @@ footer{
     width: 100px;
   }
 
+  .minusculo{
+    height: 1px;
+  }
 
+  .single-item, img{
+    height: 1px;
+  }
 
   
 }

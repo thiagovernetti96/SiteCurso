@@ -12,7 +12,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body class="bg-dark-subtle">
   <header>
@@ -31,53 +30,67 @@
     <div class="h2 cursos">
       <h2>Cursos</h2>
     </div>
-    <!--<div class="swiper">
-      <div class="swiper-wrapper">
-          <div class="swiper-slide">
-              Slide 1
-              <div class="c-card">
-                  <h2>Gana</h2>
-              </div>
-              <div class="c-card">
-                  <h2>Togo</h2>
-              </div>
-              <div class="c-card">
-                  <h2>República Dominicana</h2>
-              </div>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="c-card">
+            <h2>República Dominicana</h2>
           </div>
-          <div class="swiper-slide">
-              Slide 2
-              <div class="c-card">
-                  <h2>Brasil</h2>
-              </div>
-              <div class="c-card">
-                  <h2>Argentina</h2>
-              </div>
-              <div class="c-card">
-                  <h2>Uruguai</h2>
-              </div>
+        </div>
+        <div class="carousel-item">
+          <div class="c-card">
+            <h2>República Dominicana</h2>
           </div>
-          <div class="swiper-slide">
-              Slide 3
-              <div class="c-card">
-                  <h2>Colômbia</h2>
-              </div>
-              <div class="c-card">
-                  <h2>Chile</h2>
-              </div>
-              <div class="c-card">
-                  <h2>Austrália</h2>
-              </div>
+        </div>
+        <div class="carousel-item">
+          <div class="c-card">
+            <h2>Austrália</h2>
           </div>
+        </div>
       </div>
-      < Botões de navegação -->
-      <!--<div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      < Paginação -->
-      <!--<div class="swiper-pagination"></div>
-      < Barra de rolagem -->
-      <!--<div class="swiper-scrollbar"></div>-->
-  </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+ 
+        <div class="c-card">
+          <h2>Brasil</h2>
+        </div>
+        <div class="c-card">
+            <h2>Argentina</h2>
+        </div>
+        <div class="c-card">
+            <h2>Uruguai</h2>
+        </div>
+
+    </div> 
+      <div class="c-card">
+        <h2>República Dominicana</h2>
+      </div>
+        <div class="c-card">
+          <h2>Brasil</h2>
+        </div>
+        <div class="c-card">
+            <h2>Argentina</h2>
+        </div>
+        <div class="c-card">
+            <h2>Uruguai</h2>
+        </div>
+
+      <div class="swiper-slide">
+        <div class="c-card">
+          <h2>Colômbia</h2>
+        </div>
+        <div class="c-card">
+            <h2>Chile</h2>
+        </div>
+        
+      </div>
   </section>
   <section>
     <div class="d-flex justify-content-center mt-2 flex-wrap">
@@ -257,7 +270,7 @@
     </div>
     <img class="Trabalhe-Conosco" src="resources/img/senac trabalhe conosco.png" alt="">
 
-    <div class=" d-flex justify-content-around flex-wrap mt-2">
+    <div class=" d-flex justify-content-around flex-wrap ">
       <img class="sede" src="resources/img/sede-propria-landix-blog.webp" alt="Sede da empresa">
       <p class="   align-self-center"> Nós da Cursae somos a maior empresa de cursos para ti da américa latina<br>,presente em mais de 10 países,
        e temos as melhores vagas
@@ -269,7 +282,7 @@
     <div class="d-flex justify-content-center mt-3 mb-2">
       <h2>Certificados</h2>
     </div>
-    <div class="d-flex justify-content-around flex-wrap mb-3">
+    <div class="d-flex justify-content-around flex-wrap ">
       <img class="certificado" src="vendors/css/img/GPTW_2022.webp" alt="">
       <img  class="certificado" src="vendors/css/img/best places glassdoor.png" alt="">
       <img class="certificado" src="vendors/css/img/top of mind.png" alt="">
@@ -294,8 +307,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="resources/js/Carrousel.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
+  <!--<script>
     const swiper = new Swiper('.swiper', {
       
       direction: 'vertical',
@@ -314,7 +328,7 @@
         el: '.swiper-scrollbar',
       },
     });
-  </script>
+  </script>-->
 </body>
 
 </html>
