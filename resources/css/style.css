@@ -88,15 +88,13 @@ li a{
   height: 400px;
   background-color: rgb(175, 103, 8);
   margin-top: 20px;
-  margin-left: 300px;
+  margin-left: 20px;
 }
 
-.carousel-item {
-  display: flex;
-  justify-content: center;
-}
-.carousel-inner{
-  display: flex;
+
+.multiple-items{
+  width: 75%;
+  margin: 0 auto;
 }
 
 /*Seção Professores*/
