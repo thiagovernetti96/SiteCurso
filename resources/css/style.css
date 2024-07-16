@@ -185,10 +185,16 @@ form{
   width: 45%; 
 }
 
+.select-s{
+  margin-top: 0;
+}
+
+
+
 .submit-group{
   display: flex;
   flex-direction: column;
-  margin-left: 450px;
+  margin-left: 500px;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 25%; 
@@ -209,6 +215,8 @@ select {
   height: 50px;
   
 }
+
+
 /*Seção Trabalhe Conosco*/
 
 
