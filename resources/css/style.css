@@ -25,18 +25,20 @@ header{
   height:100px;
 }
 
+.hamburger-menu {
+  display: none;
+}
 
-ul{
+.ul-hamburguer{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   gap: 20px;
   
 }
 li{
-  list-style: none;
-  align-self: center;
-  margin-right: 100px;
   
+  list-style: none;
+  margin-right: 100px;  
   color:black ;
 }
 
@@ -44,6 +46,7 @@ li{
 li a{
  text-decoration: none;
 }
+
 
 /*Section Cursos*/
 
@@ -63,6 +66,7 @@ li a{
   background-color: rgb(241, 239, 237);
   margin-top: 20px;
   margin-left: 20px;
+  padding: 15px;
 }
 
 
@@ -70,7 +74,14 @@ li a{
   width: 75%;
   margin: 0 auto;
   
+  
 }
+
+.botao-1{
+  margin-left: 80px;
+  margin-top: auto;
+}
+
 
 /*Seção Professores*/
 .c2-card {
@@ -83,12 +94,13 @@ li a{
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 .professores{
   height: 150px;
   border-radius: 50%;
   width: 130px;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-left: 10px;
 }
 
@@ -120,10 +132,16 @@ li a{
   height: 150px;
   border-radius: 50%;
   width: 130px;
-  margin-top: 80px;
+  margin-top: 130px;
+  margin-left: 10px;
 }
-.nome-dos-professores{
-  margin-top: 100px;
+.nome-dos-professores-marcos{
+  margin-top: 130px;
+  margin-left: 20px;
+}
+
+.nome-dos-professores-paula-neri{
+  margin-top: 130px;
   margin-left: 20px;
 }
 
@@ -143,16 +161,50 @@ li a{
 }
 
 .nome-dos-professores-sergio{
-  margin-top: 150px;
-  margin-left: 30px;
+  margin-top: 190px;
+  margin-left: 30px;  
 }
+
+.icone{
+  height: 50px;
+  width: 200px;
+  margin-bottom: 100px;
+}
+
+.icone-carla{
+  height: 50px;
+  width: 200px;
+  margin-bottom: 50px;
+
+}
+
+.icone-paula{
+  height: 50px;
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+.icone-carlos{
+  height: 50px;
+  width: 200px;
+  margin-bottom: 70px;
+}
+
+.icone-marcos{
+  height: 50px;
+  width: 200px;
+  margin-bottom: 60px;
+}
+
 
 /*Seção Depoimentos*/
 .d2-card{
   border-radius:3px;
-  height: 400px;
-  width: 450px;
+  height: auto;
+  width: 350px;
   background-color: rgba(245, 243, 241, 0.486);
+  padding: 15px;
+  flex-grow: 1;
 }
 
 .foto-aluno{
@@ -161,6 +213,9 @@ li a{
   width: 50px;
   
 }
+
+
+
 /*Seção Trabalhe conosco*/
 .certificado{
   height: 150px;
@@ -224,23 +279,89 @@ select {
   width:100%;
 }
 
+/* footer*/
 footer{
   width: 100%;
 }
 
-.swiper{
+.ul-footer{
   display: flex;
-  margin-left: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  color:black;
+  margin: 0;
+  padding: 20px;
 }
 
-@media only screen and (min-width:390px) and  (max-width: 768px) {
+.li-footer a{
+  color: black;
+}
+
+.icone-footer{
+  height: 50px;
+  width: 200px;
+  margin-bottom: 0px;
+}
+
+
+/*media query dispositivos moveis gerais*/
+@media only screen and (min-width:360px) and  (max-width: 768px) {
+
+header{
+  display: flex;
+  flex-direction: column;
+}
+
+nav{ 
+  position: relative;
+}
+
+.hamburger-menu {
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+.hamburger-menu span {
+  background: #333;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.ul-hamburguer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  background: #f4f4f4;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ul-hamburguer li {
+  border-bottom: 1px solid #ddd;
   
-  /*header*/
-  ul{
-    display: flex;
-    flex-direction: column;
-    margin-left: 60px;
-  }
+  display: flex;
+  justify-content: center;
+  margin-left: 90px;
+}
+
+.ul-hamburguer li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+
+}
+
+.ul-hamburguer li a:hover {
+  background: #ddd;
+}
+
   /*inscrição*/
   .form-group {
     display: flex;
@@ -276,62 +397,491 @@ footer{
   .professores{
     height: 80px;
     width: 100px;
-    margin-top: 20px;
-    margin-left: 10px;
+    margin-top: 80px;
+    margin-left: 20px;
   }
 
   .professores-paulo{
     height: 80px;
     width: 100px;
     margin-top:120px;
-    margin-left: 10px;
+    margin-left: 20px ;
   }
 
   .professores-carla{
     height: 80px;
     width: 100px;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
   }
 
   .professores-carlos{
     height: 80px;
     width: 100px;
     margin-top:90px;
-    margin-left: 10px;
+    margin-left: 20px;
   }
 
   .professores-sergio{
     height: 80px;
     width: 100px;
     margin-top: 120px;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   
   .nome-dos-professores{
-    margin-top: 0px;
-    margin-left: 20px;
+    margin-top: 40px;
+    margin-left: 60px;
   }
 
-  .nome-dos-professores-paulo{
-    margin-top: 0px;
-    margin-left: 20px;
-  }
   
+  .nome-dos-professores-paulo{
+    margin-top: 140px;
+    margin-left: 50px;
+
+  }
+
+  .nome-dos-professores-marcos{
+    margin-left: 50px;
+  }
+  .nome-dos-professores-paula-neri{
+    margin-left: 50px;
+  }
+
   .nome-dos-professores-sergio{
-    margin-top: 0px;
-    margin-left: 20px;
+    margin-top: 130px;
+    margin-left: 50px;
   }
 
   .nome-dos-professores-carla{
-    margin-left: 5px;
-    margin-top: 0;
+    margin-left: 60px;
+    margin-top: 30px;
   }
 
   .nome-dos-professores-carlos{
+    margin-top: 110px;
+    margin-left: 60px;
+  }
+
+   .c2-card{
+    flex-basis: 250px;
+    flex-grow: 1;
+
+    
+  }
+  
+}
+
+/*imagem professores media quyery*/
+@media only screen and (max-width:600px) {
+  .sec-professores img{
+    display: block;
+    height: 70px;
+    width: 70px;
+  }
+
+}
+
+/*cards slider media querys*/
+@media only screen and (min-width:540px) and (max-width:560px){
+  .c-card {
+    border-radius: 5px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
+    width: auto;
+    height: 500px;
+    background-color: rgb(241, 239, 237);
+    margin-top: 20px;
+    padding: 15px;
+  }
+  
+
+  .responsive{
+    height: 500px;
+  }
+
+  .b-laranja{
+    margin-bottom: 0px;
     margin-top: 0px;
+  }
+}
+@media only screen and (min-width:561px) and (max-width:599px){
+  .c-card {
+    border-radius: 5px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height:500px;
+    background-color: rgb(241, 239, 237);
+    
+    
+  }
+  
+  .botao-1{
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width:600px) and (max-width:892px) {
+  .c-card{
+    border-radius: 5px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height:500px;
+
+  }
+  .botao-1{
+    margin-left:15px;
+    padding: 15px;
+    margin-top: 0px;
+  }
+
+}
+
+@media only screen and (min-width:893px) and (max-width:1024px){
+  .c-card{
+    height: 500px;
+  }
+
+  .botao-1{
+    margin-left:10px;
+    padding: 10px;
+    margin-top: 0px;
+  }
+
+ 
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .c-card {
+    height: 500px;
+  
+  }
+  .botao-1 {
+    margin-left: 40px ;
+  }
+}
+
+/* Cards professores media querys específicas*/
+@media only screen and (min-width:500px) and (max-width:600px){
+
+  .professores-sergio{
+
+    border-radius: 50%;
+    width: 130px;
+    margin-top: 80px;
+  }
+
+  .professores{
+    height: 80px;
+    border-radius: 50%;
+    width: 130px;
+    margin-top: 60px;
+  }
+
+  .nome-dos-professores-carla{
+    margin-left: 10px;
+
+  }
+
+
+  .nome-dos-professores-sergio{
+    margin-top: 100px;
     margin-left: 20px;
   }
 
+  .nome-dos-professores-marcos{
+    margin-top: 90px;
+    margin-left: 10px;
+  }
+
+  .nome-dos-professores-paula-neri{
+    margin-top: 80px;
+    margin-left: 90px;
+
+  }
+
+  .nome-dos-professores-paulo{
+    margin-left: 10px;
+
+  }
   
+  .icone{
+    height: 50px;
+    width: 200px;
+    margin-bottom: 100px;
+  }
+
+  .icone-marcos{
+    height: 50px;
+    width: 200px;
+    margin-bottom: 100px;
+  }
 }
+@media only screen and (min-width:750px) and (max-width:768px){
+
+
+
+  .professores{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin:auto;
+  }
+
+  .professores-paulo{
+    margin: auto;
+  }
+
+
+  .professores-carla{
+    width: 90px;
+    height: 90px;
+    margin:auto
+  }
+
+  .professores-carlos{
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    padding: 0px;
+  }
+
+
+
+
+  .professores-sergio{
+    width: 80px;
+    height: 80px;
+    margin:auto
+  }
+
+  
+
+  .nome-dos-professores-marcos{
+   margin: auto;
+  }
+
+  .nome-dos-professores-carla{
+    
+    margin: auto;
+  }
+
+  .nome-dos-professores-carlos{
+    margin: auto;
+
+  }
+
+  .nome-dos-professores-sergio{
+    margin: auto;
+  }
+
+  .nome-dos-professores-paula-neri{
+   margin: auto;
+  }
+  
+  .nome-dos-professores-paulo{
+   margin: auto;
+
+  }
+
+
+  .icone{
+    height: 50px;
+    width: 200px;
+    margin:auto;
+  }
+
+
+  .icone-marcos{
+    height: 50px;
+    width: 200px;
+    margin:auto;
+  }
+
+  .icone-carla{
+
+    margin:auto;
+  }
+
+  .icone-carlos{
+    height: 50px;
+    width: 200px;
+    margin:auto
+  }
+
+}
+
+@media only screen and (min-width:769px) and (max-width:860px){
+
+  .professores{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin:auto;
+  }
+
+  .professores-paulo{
+    height: 100px;
+    width: 100px;
+    margin-top: auto;
+
+  }
+
+  .professores-carla{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+  
+  }
+
+  .professores-carlos{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+  }
+
+  .professores-sergio{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+
+  }
+
+  .nome-dos-professores-carla{
+    margin: auto;
+  }
+
+
+  .nome-dos-professores-sergio{
+    margin: auto;
+    
+  }
+
+
+  .nome-dos-professores-carlos{
+   margin: auto;
+
+  }
+
+
+  .nome-dos-professores-marcos{
+    
+    margin:auto ;
+
+  }
+
+  .nome-dos-professores-paula-neri{
+    margin: auto;
+
+  }
+
+  .icone{
+    height: 50px;
+    width: 200px;
+    margin: auto;
+  }
+
+  .icone-marcos{
+    height: 50px;
+    width: 200px;
+    margin: auto;
+  }
+
+  .icone-carlos{
+    margin: auto;
+  }
+
+  .icone-carla{
+    margin: auto;
+  }
+
+
+}
+
+@media only screen and (min-width:861px) and (max-width:964px){
+  .professores{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    margin:auto;
+  }
+
+  .professores-paulo{
+    height: 120px;
+    width: 120px;
+    margin-top: 150px;
+
+  }
+
+  .professores-carla{
+    height: 120px;
+    width: 120px;
+    margin: auto;
+  
+  }
+
+  .professores-carlos{
+    height: 120px;
+    width: 120px;
+    margin: auto;
+  }
+
+  .professores-sergio{
+    height: 120px;
+    width: 120px;
+    margin-top: 140px;
+    margin-bottom: 0px;
+
+  }
+
+  .nome-dos-professores-carla{
+    margin: auto;
+  }
+
+
+  .nome-dos-professores-sergio{
+    margin: auto;
+    margin-top:180px;
+  }
+
+
+  .nome-dos-professores-carlos{
+    margin: auto;
+
+  }
+
+
+  .nome-dos-professores-marcos{
+    
+    margin:auto ;
+
+  }
+
+  .nome-dos-professores-paula-neri{
+    margin: auto;
+
+  }
+
+  .icone-marcos{
+    height: 50px;
+    width: 200px;
+    margin: auto;
+  }
+
+  .icone-carlos{
+    margin: auto;
+  }
+
+  .icone-carla{
+    margin: auto;
+  }
+
+
+
+
+
+
+}
+
+
+  
